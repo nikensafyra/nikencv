@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Niken cv</title>
+    <title>Niken Amelia Ananda Safira - Personal CV</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -72,7 +72,7 @@
 
     /* Navbar Sticky */
     .navbar-brand h1 {
-        color: rgb(2, 24, 148) !important;
+        color: #0373a0 !important;
         /* Warna default agar terlihat */
         transition: color 0.3s ease-in-out;
     }
@@ -176,16 +176,27 @@
     }
 
     .hero-header {
-        background: url(img/mini1.png) no-repeat center center;
+        background: url(img/gb.jpg) no-repeat center center;
         background-size: cover;
         position: relative;
-        padding: 3rem 0;
+        padding: 6rem 0;
     }
 
     .biodata {
         font-size: 1.0rem;
         /* Sesuaikan ukuran teks */
 
+    }
+
+    /* Navbar dengan bayangan default */
+    .navbar {
+        transition: box-shadow 0.8s ease-in-out;
+    }
+
+    /* Efek bayangan setelah scroll, dengan bayangan lebih tebal */
+    .navbar.scrolled {
+        box-shadow: 0 70px 90px rgba(0, 0, 0, 0);
+        /* Bayangan lebih tebal */
     }
 </style>
 
@@ -200,7 +211,7 @@
         </div>
         <!-- Spinner End -->
 
-        <nav class="navbar navbar-expand-lg navbar-light px-3 px-lg-5 py-2 py-lg-0 fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light px-3 px-lg-5 py-2 py-lg-0 fixed-top">
             <div class="container-fluid">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa-solid fa-regular fa-star me-2"></i>Niken<span class="fs-5">cv</span>
@@ -220,20 +231,19 @@
                 </div>
             </div>
         </nav>
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <!-- Navbar -->
 
+        <div class="container-xxl position-relative p-0">
             <div class="container-xxl py-5 bg-primary hero-header mb-5" id="home" style="margin-top: 60px;">
                 <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">NIKEN AMELIA ANANDA SAFIRA</h1>
-                            <p class="text-white pb-3 animated zoomIn fs-4">
-                                Web Developer dengan minat di teknologi dan UI/UX Design. Berpengalaman dalam Laravel,
-                                PHP, dan Bootstrap. Siap belajar dan berkembang.
-                            </p>
-                            <div class="">
+                    <div class="row g-5 ">
+                        <h1 class="text-center text-white mb-2 animated zoomIn">NIKEN AMELIA ANANDA SAFIRA
+                        </h1>
+                        <p class="text-center text-white pb-1 animated zoomIn fs-4">
+                            Web Developer dengan minat di teknologi dan UI/UX Design. Berpengalaman dalam Laravel,
+                            PHP, dan Bootstrap. Siap belajar dan berkembang.
+                        </p>
+                        <div class="col-12 text-center">
+                            <div>
                                 <a href="https://wa.me/6282226834948"
                                     class="btn btn-outline-light py-2 px-3 rounded-pill d-inline-block mx-1 animated slideInRight">
                                     <i class="fab fa-whatsapp"></i>
@@ -252,15 +262,11 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid wow zoomIn  mt-4" data-wow-delay="0.5s" src="img/ku.png"
-                                loading="lazy">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
+
 
         <!-- About Start -->
         <div class="container-xxl py-5" id="about">
@@ -274,17 +280,16 @@
                             <div class="border border-primary p-3 rounded" data-wow-delay="0.3s mt-1">
                                 <h6 class=" d-inline text-primary ps-6 fs-5">Tentang saya</h6>
                                 <p class=" pb-1 mt-3 animated zoomIn fs-7">
-                                    Saya adalah Web Developer dengan minat dalam teknologi dan UI/UX Design.
-                                    Berpengalaman dalam Laravel, PHP, dan Bootstrap untuk membangun antarmuka yang
-                                    responsif dan fungsional. Saya selalu siap belajar dan berkembang dalam pengembangan
-                                    web.
+                                    Web Developer dengan pengalaman mengembangkan aplikasi menggunakan Laravel dan PHP,
+                                    serta fokus pada desain antarmuka yang ramah pengguna (UI/UX). Mampu bekerja secara
+                                    mandiri maupun tim, dengan komitmen tinggi terhadap detail dan kepuasan pengguna.
                                 </p>
                             </div>
-                            <h2 class="mt-4">Data Pribadi</h2>
+                            <h3 class="mt-4" style="font-size: 1.50rem;">Data Pribadi</h3>
                         </div>
 
                         <!-- Tambahan Biodata -->
-                        <div class="biodata mt-3">
+                        <div class="biodata mt-3" style="font-size: 0.9rem;">
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
@@ -300,16 +305,16 @@
                                         <td>: Kelet, Keling, Jepara</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Agama</strong></td>
-                                        <td>: Islam</td>
-                                    </tr>
-                                    <tr>
                                         <td><strong>Jenis Kelamin</strong></td>
                                         <td>: Perempuan</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Status</strong></td>
-                                        <td>: Pelajar</td>
+                                        <td>: Fresh Graduate</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Agama</strong></td>
+                                        <td>: Islam</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -317,18 +322,18 @@
                     </div>
 
                     <!-- Foto -->
-                    <div class="col-lg-6 mb-5">
-                        <img class="img-fluid wow zoomIn  mt-4" data-wow-delay="0.5s" src="img/ku.png" loading="lazy">
+                    <div class="col-lg-6 mb-5 text-center">
+                        <img class="img-fluid wow zoomIn mt-4 mx-auto d-block" data-wow-delay="0.5s" src="img/pip.png"
+                            style="max-width: 70%; height: auto;" loading="lazy">
                     </div>
-
                     <!-- Pendidikan -->
                     <div class="col-lg-6 wow fadeInUp" mt-5 data-wow-delay="0.3s mt-1">
                         <div class="section-title position-relative mb-4 pb-2">
                             <h6 class="position-relative text-primary ps-4">Pendidikan</h6>
-                            <h2 class="mt-2">Riwayat Pendidikan</h2>
+                            <h2 class="mt-2" style="font-size: 1.50rem;">Riwayat Pendidikan</h2>
                         </div>
                         <ul class="list-unstyled">
-                            <li class="mb-3">
+                            <li class="mb-3" style="font-size: 0.9rem;">
                                 <h6><i class="fa fa-graduation-cap text-primary me-2"></i> SMK Wikrama 1 Jepara</h6>
                                 <p>Jurusan Rekayasa Perangkat Lunak | 2022 - 2025</p>
                             </li>
@@ -339,14 +344,14 @@
                     <div class="col-lg-6 wow fadeInUp" mt-5 data-wow-delay="0.3s mt-3">
                         <div class="section-title position-relative mb-4 pb-2">
                             <h6 class="position-relative text-primary ps-4">Activity</h6>
-                            <h2 class="mt-2">Aktivitas & Pengalaman</h2>
+                            <h2 class="mt-2" style="font-size: 1.50rem;">Aktivitas & Pengalaman</h2>
                         </div>
                         <ul class="list-unstyled">
-                            <li class="mb-3">
+                            <li class="mb-3" style="font-size: 0.9rem;">
                                 <h6><i class="fa fa-laptop-code text-primary me-2"></i> Web Development</h6>
                                 <p>Berhasil menyelesaikan proyek web Laravel dan mendapatkan hasil memuaskan.</p>
                             </li>
-                            <li class="mb-3">
+                            <li class="mb-3" style="font-size: 0.9rem;">
                                 <h6><i class="fa fa-users text-primary me-2"></i> Ketua Putri Organisasi Kepramukaan
                                 </h6>
                                 <p>Mengelola dan memimpin berbagai kegiatan organisasi pramuka.</p>
@@ -365,15 +370,17 @@
                 <div class="section-title position-relative text-center mb-5 mt-4 pb-2 wow fadeInUp"
                     data-wow-delay="0.1s">
                     <h6 class="position-relative d-inline text-primary ps-4">My Skills</h6>
-                    <h2 class="mt-2">Skill & Expertise</h2>
+                    <h2 class="mt-2" style="font-size: 1.50rem;">Skill & Expertise</h2>
                 </div>
-                <div class="row g-4 text-center mb-5 mt-1">
+                <div class="row g-4 text-center mb-5 mt-1" style="font-size: 0.8rem;">
 
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="mb-2 text-primary"><i class="fas fa-code me-2"></i> Web Development (PHP, Laravel,
-                            Bootstrap, JavaScript, Codeigniter)</h5>
+                        <h6 class="mb-2 text-primary">
+                            <i class="fas fa-code me-2"></i> Web Development (PHP, Laravel, Bootstrap, JavaScript,
+                            Codeigniter)
+                        </h6>
                         <div class="progress"
-                            style="height: 20px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
+                            style="height: 16px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
                             <div class="progress-bar progress-bar-striped bg-primary" style="width: 85%; height: 100%;">
                             </div>
                         </div>
@@ -381,10 +388,11 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="mb-2 text-primary"><i class="fas fa-file-alt me-2"></i> Microsoft Office (Word,
-                            Excel, PowerPoint)</h5>
+                        <h6 class="mb-2 text-primary">
+                            <i class="fas fa-file-alt me-2"></i> Microsoft Office (Word, Excel, PowerPoint)
+                        </h6>
                         <div class="progress"
-                            style="height: 20px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
+                            style="height: 16px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
                             <div class="progress-bar progress-bar-striped bg-primary" style="width: 80%; height: 100%;">
                             </div>
                         </div>
@@ -392,10 +400,11 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="mb-2 text-primary"><i class="fas fa-palette me-2"></i> Desain Grafis (Corel Draw,
-                            Canva, Figma)</h5>
+                        <h6 class="mb-2 text-primary">
+                            <i class="fas fa-palette me-2"></i> Desain Grafis (Corel Draw, Canva, Figma)
+                        </h6>
                         <div class="progress"
-                            style="height: 20px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
+                            style="height: 16px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
                             <div class="progress-bar progress-bar-striped bg-primary" style="width: 80%; height: 100%;">
                             </div>
                         </div>
@@ -403,15 +412,19 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="mb-2 text-primary"><i class="fas fa-video me-2"></i> Video Editing (CapCut)</h5>
+                        <h6 class="mb-2 text-primary">
+                            <i class="fas fa-video me-2"></i> Video Editing (CapCut)
+                        </h6>
                         <div class="progress"
-                            style="height: 20px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
+                            style="height: 16px; background: repeating-linear-gradient(90deg, #ddd, #ddd 12px, transparent 12px, transparent 24px);">
                             <div class="progress-bar progress-bar-striped bg-primary" style="width: 70%; height: 100%;">
                             </div>
                         </div>
                         <p class="mt-2">70%</p>
                     </div>
+
                 </div>
+
             </div>
         </div>
 
@@ -422,61 +435,64 @@
                 <div class="section-title position-relative text-center mb-5 mt-4 pb-2 wow fadeInUp"
                     data-wow-delay="0.1s">
                     <h6 class="position-relative d-inline text-primary ps-4 mt-4">My Portfolio</h6>
-                    <h2 class="mt-2">Showcasing My Work</h2>
+                    <h2 class="mt-2" style="font-size: 1.50rem;">Showcasing My Work</h2>
                 </div>
-                <div class="row g-4">
-                    <!-- Kotak 1 -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="portfolio-box">
-                            <div class="portfolio-header">Sistem POS Kasir</div>
-                            <img class="img-fluid mt-3" src="img/pos.png" alt="Laravel Penjualan">
-                            <h5 class="text-center mt-3">TAMPILAN POS KASIR</h5>
-                            <p class="text-center">Sistem Point of Sale (POS) berbasis web yang dibangun
-                                dengan
-                                JavaScript dan Tailwind CSS. Aplikasi ini dirancang untuk memudahkan
-                                transaksi penjualan
-                                dengan fitur seperti pencatatan produk, perhitungan otomatis, serta
-                                penerapan diskon
-                                untuk pelanggan terdaftar.</p>
-                        </div>
-                    </div>
+                <div class="row g-4" style="font-size: 0.85rem;">
                     <!-- Kotak 2 -->
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-box">
-                            <div class="portfolio-header">LARAVEL PENJUALAN</div>
-                            <img class="img-fluid" src="img/penju.png" alt="Laravel Penggajian">
-                            <h5 class="text-center mt-3">TAMPILAN LARAVEL PENGGAJIAN</h5>
-                            <p class="text-center">Laravel Penggajian memanfaatkan fitur Bootstrap dan
-                                Laravel untuk
-                                menyediakan tampilan yang mudah digunakan, memungkinkan pengguna dengan
-                                mudah
-                                menampilkan dan menambah data.</p>
+                            <div class="portfolio-header">💻 Redesign Website Kantor</div>
+                            <img class="img-fluid mt-3" src="img/kan.png" alt="Redesign Website IoT Kantor">
+                            <h6 class="text-center mt-3"><strong>Peran:</strong> UI/UX Designer</h6>
+                            <ul class="list-unstyled mt-3">
+                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Informasi:</strong> Mendesain ulang tampilan dan antarmuka website IoT
+                                    kantor agar lebih modern dan responsif. Fokus pada peningkatan user experience dan
+                                    tata letak informasi.</li>
+                            </ul>
                         </div>
                     </div>
+
                     <!-- Kotak 3 -->
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-box">
-                            <div class="portfolio-header">LARAVEL PENGGAJIAN</div>
-                            <img class="img-fluid mt-3" src="img/peng.png" alt="Laravel Penjualan">
-                            <h5 class="text-center mt-3">TAMPILAN LARAVEL PENGGAJIAN</h5>
-                            <p class="text-center">Sistem penggajian berbasis Laravel dengan desain
-                                Bootstrap
-                                untuk mengelola data karyawan, perhitungan gaji, dan laporan. Dibangun
-                                dengan antarmuka
-                                responsif dan fitur otomatisasi perhitungan.</p>
+                            <div class="portfolio-header">🧾 Sistem Point of Sales (POS)</div>
+                            <img class="img-fluid mt-3" src="img/pos.png" alt="Sistem Point of Sales (POS)">
+                            <h6 class="text-center mt-3"><strong>Peran:</strong> UI/UX Designer & Frontend Developer
+                            </h6>
+                            <ul class="list-unstyled mt-3">
+                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Deskripsi:</strong> Membangun sistem POS untuk transaksi penjualan, termasuk
+                                    fitur pencatatan transaksi, diskon otomatis untuk member, dan cetak struk.</li>
+                            </ul>
                         </div>
                     </div>
+
                     <!-- Kotak 4 -->
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-box">
-                            <div class="portfolio-header">FRONTEND</div>
-                            <img class="img-fluid" src="img/front.png" alt="Laravel Penggajian">
-                            <h5 class="text-center mt-3">TAMPILAN FRONTEND</h5>
-                            <p class="text-center">Membangun frontend dengan Bootstrap untuk menciptakan
-                                tampilan
-                                yang responsif, modern, dan user-friendly. Fokus pada desain yang rapi
-                                dan pengalaman
-                                pengguna yang optimal.</p>
+                            <div class="portfolio-header">🌐 Web CV Pribadi</div>
+                            <img class="img-fluid mt-3" src="img/cv.png" alt="Web CV Pribadi">
+                            <h6 class="text-center mt-3"><strong>Peran:</strong> Frontend Developer & UI Designer</h6>
+                            <ul class="list-unstyled mt-3">
+                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                                <li><strong>Deskripsi:</strong> Merancang dan mengembangkan web CV pribadi dengan
+                                    tampilan modern, responsif, serta fitur portofolio, dan kontak.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kotak 5 -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="portfolio-box">
+                            <div class="portfolio-header">🏢 Laravel penggajian</div>
+                            <img class="img-fluid mt-3" src="img/peng.png" alt="Web CV Pribadi">
+                            <h6 class="text-center mt-3"><strong>Peran:</strong> Web Developer</h6>
+                            <ul class="list-unstyled mt-3">
+                                <li><strong>Teknologi:</strong> Laravel, Bootstrap, PHP</li>
+                                <li><strong>Deskripsi:</strong> Membangun sistem penggajian untuk mengelola data
+                                    karyawan, perhitungan gaji otomatis, dan pembuatan laporan bulanan. Dirancang dengan
+                                    antarmuka responsif untuk memudahkan administrasi.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -484,43 +500,42 @@
         </div>
         <!-- Portfolio End -->
 
-
-
         <style>
             .portfolio-box {
-                border: 3px solid #0515a7;
-                padding: 20px;
+                border: 2px solid #0373a0;
+                padding: 15px;
                 border-radius: 10px;
                 text-align: center;
                 background-color: #fff;
-                width: 100%;
-                height: 500px;
+                width: 90%;
+                height: 450px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                margin: 0 auto;
             }
 
             .portfolio-header {
-                background: linear-gradient(to right, #0407c9, #0356f1);
+                background: linear-gradient(to right, #0373a0, #0373a0);
                 color: white;
                 font-weight: bold;
-                padding: 10px;
-                border-radius: 30px 0px 30px 0px;
+                padding: 8px;
+                border-radius: 20px 0px 20px 0px;
                 display: inline-block;
-                margin-top: -30px;
+                margin-top: -20px;
                 position: relative;
             }
 
             .portfolio-box img {
-                border: 2px solid #011aaa;
+                border: 2px solid #0373a0;
                 border-radius: 5px;
                 width: 100%;
-                height: 250px;
+                height: 200px;
                 object-fit: cover;
             }
 
             .portfolio-box:hover {
-                box-shadow: 0 10px 30px rgba(33, 36, 177, 0.15);
+                box-shadow: 0 10px 30px rgba(3, 115, 160, 0.15);
                 transform: translateY(-5px);
             }
 
@@ -528,16 +543,26 @@
                 transform: scale(1.02);
             }
 
-            h5 {
+            h6 {
                 margin-bottom: 2px;
-                /* Atur jarak bawah */
             }
 
             p {
                 margin-top: 0;
-                /* Hilangkan margin atas */
+                font-size: 0.85rem;
+            }
+
+            ul.list-unstyled {
+                text-align: left;
+                /* Menyusun daftar rata kiri */
+                margin-top: 10px;
+            }
+
+            ul.list-unstyled li {
+                margin-bottom: 5px;
             }
         </style>
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5  wow fadeIn">
@@ -673,7 +698,17 @@
             });
         });
     </script>
-
+    <script>
+        // Menambahkan atau menghapus kelas scrolled saat menggulir halaman
+        window.onscroll = function () {
+            let navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {  // Jika scroll lebih dari 50px
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+    </script>
     <script>
         // Perbaikan inisialisasi AOS
         if (typeof AOS !== 'undefined') {
