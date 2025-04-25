@@ -113,6 +113,27 @@
             left: 10px;
             right: 10px;
         }
+
+        /* Perbaikan untuk mobile */
+        .container-xxl {
+            padding-left: 15px;
+            padding-right: 15px;
+            overflow-x: hidden;
+        }
+
+        .portfolio-box {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .navbar-collapse {
+            background: white;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
     }
 
     /* Animasi tutup navbar mobile */
@@ -152,12 +173,13 @@
     /* Responsive Portfolio */
     @media (max-width: 768px) {
         .portfolio-box {
-            min-height: 400px;
+            min-height: auto;
             height: auto;
+            padding: 10px;
         }
 
         .portfolio-box img {
-            height: 200px;
+            height: 180px;
         }
     }
 
@@ -185,7 +207,6 @@
     .biodata {
         font-size: 1.0rem;
         /* Sesuaikan ukuran teks */
-
     }
 
     /* Navbar dengan bayangan default */
@@ -215,6 +236,86 @@
         background-color: #0373a0 !important;
         border-color: #0373a0 !important;
         color: white !important;
+    }
+
+    /* Portfolio Box Styles */
+    .portfolio-box {
+        border: 2px solid #0373a0;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #fff;
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        transition: all 0.3s ease;
+    }
+
+    .portfolio-header {
+        background: linear-gradient(to right, #0373a0, #0373a0);
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        border-radius: 20px 0px 20px 0px;
+        display: inline-block;
+        margin-top: -20px;
+        position: relative;
+    }
+
+    .portfolio-box img {
+        border: 2px solid #0373a0;
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .portfolio-box:hover {
+        box-shadow: 0 10px 30px rgba(3, 115, 160, 0.15);
+        transform: translateY(-5px);
+    }
+
+    .portfolio-box:hover img {
+        transform: scale(1.02);
+    }
+
+    h6 {
+        margin-bottom: 2px;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 0.85rem;
+    }
+
+    ul.list-unstyled {
+        text-align: left;
+        /* Menyusun daftar rata kiri */
+        margin-top: 10px;
+    }
+
+    ul.list-unstyled li {
+        margin-bottom: 5px;
+    }
+
+    /* Footer Button Styles */
+    .btn-circle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Spinner Styles */
+    #spinner {
+        display: none;
     }
 </style>
 
@@ -382,7 +483,6 @@
         <!-- About End -->
 
         <!-- My Skills -->
-        <!-- My Skills -->
         <div class="container-xxl py-5" id="service">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 mt-4 pb-2 wow fadeInUp"
@@ -446,8 +546,6 @@
                     </div>
 
                 </div>
-
-
             </div>
         </div>
 
@@ -468,7 +566,7 @@
                             <img class="img-fluid mt-3" src="img/kan.png" alt="Redesign Website IoT Kantor">
                             <h6 class="text-center mt-3"><strong>Peran:</strong> UI/UX Designer</h6>
                             <ul class="list-unstyled mt-3">
-                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Teknologi:</strong> Figma</li>
                                 <li><strong>Informasi:</strong> Mendesain ulang tampilan dan antarmuka website IoT
                                     kantor agar lebih modern dan responsif. Fokus pada peningkatan user experience dan
                                     tata letak informasi.</li>
@@ -484,7 +582,7 @@
                             <h6 class="text-center mt-3"><strong>Peran:</strong> UI/UX Designer & Frontend Developer
                             </h6>
                             <ul class="list-unstyled mt-3">
-                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript, React Js</li>
                                 <li><strong>Deskripsi:</strong> Membangun sistem POS untuk transaksi penjualan, termasuk
                                     fitur pencatatan transaksi, diskon otomatis untuk member, dan cetak struk.</li>
                             </ul>
@@ -498,7 +596,7 @@
                             <img class="img-fluid mt-3" src="img/cv.png" alt="Web CV Pribadi">
                             <h6 class="text-center mt-3"><strong>Peran:</strong> Frontend Developer & UI Designer</h6>
                             <ul class="list-unstyled mt-3">
-                                <li><strong>Teknologi:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                                <li><strong>Teknologi:</strong> HTML, CSS, Bootstrap</li>
                                 <li><strong>Deskripsi:</strong> Merancang dan mengembangkan web CV pribadi dengan
                                     tampilan modern, responsif, serta fitur portofolio, dan kontak.</li>
                             </ul>
@@ -523,70 +621,6 @@
         </div>
         <!-- Portfolio End -->
 
-        <style>
-            .portfolio-box {
-                border: 2px solid #0373a0;
-                padding: 15px;
-                border-radius: 10px;
-                text-align: center;
-                background-color: #fff;
-                width: 90%;
-                height: 450px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin: 0 auto;
-            }
-
-            .portfolio-header {
-                background: linear-gradient(to right, #0373a0, #0373a0);
-                color: white;
-                font-weight: bold;
-                padding: 8px;
-                border-radius: 20px 0px 20px 0px;
-                display: inline-block;
-                margin-top: -20px;
-                position: relative;
-            }
-
-            .portfolio-box img {
-                border: 2px solid #0373a0;
-                border-radius: 5px;
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-            }
-
-            .portfolio-box:hover {
-                box-shadow: 0 10px 30px rgba(3, 115, 160, 0.15);
-                transform: translateY(-5px);
-            }
-
-            .portfolio-box:hover img {
-                transform: scale(1.02);
-            }
-
-            h6 {
-                margin-bottom: 2px;
-            }
-
-            p {
-                margin-top: 0;
-                font-size: 0.85rem;
-            }
-
-            ul.list-unstyled {
-                text-align: left;
-                /* Menyusun daftar rata kiri */
-                margin-top: 10px;
-            }
-
-            ul.list-unstyled li {
-                margin-bottom: 5px;
-            }
-        </style>
-
-
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5  wow fadeIn">
             <div class="container ">
@@ -606,7 +640,6 @@
                                     href="mailto:nikenameliaanandasafira4@gmail.com">
                                     <i class="fas fa-envelope text-primary"></i>
                                 </a>
-
                             </div>
                         </div>
                     </div>
@@ -615,21 +648,8 @@
         </div>
         <!-- Footer End -->
 
-        <style>
-            .btn-circle {
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            }
-        </style>
         <!-- Back to Top -->
     </div>
-
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -743,14 +763,6 @@
             console.warn('AOS library failed to load');
         }
     </script>
-
-    <!-- Di CSS tambahkan -->
-    <style>
-        #spinner {
-            display: none;
-            /* Tambahkan ini */
-        }
-    </style>
 
     <!-- Di JavaScript tambahkan error handling -->
     <script>
